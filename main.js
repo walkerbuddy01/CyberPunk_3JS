@@ -11,14 +11,6 @@ import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
 import { RGBShiftShader } from 'three/examples/jsm/shaders/RGBShiftShader.js';
 import gsap from 'gsap';
 
-// gsap.to(".sap", {
-//     y: -1000,
-//     duration: 3,
-//     delay: 2,
-//     onComplete: () => {
-//         document.querySelector('.loading-screen').style.display = 'none';
-//     },
-// })
 
 const scene = new THREE.Scene();
 const canvas = document.querySelector("#canvas");
