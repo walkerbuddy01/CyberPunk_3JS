@@ -13,8 +13,11 @@ import gsap from 'gsap';
 
 gsap.to(".sap", {
     y: -1000,
-    duration: 2,
-    delay: 2
+    duration: 3,
+    delay: 2,
+    onComplete: () => {
+        document.querySelector('.loading-screen').style.display = 'none';
+    },
 })
 
 const scene = new THREE.Scene();
@@ -58,6 +61,9 @@ rgbeLoader.load('https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/pond_bridg
     loader.load('./DamagedHelmet.gltf', function (gltf) {
         model = gltf.scene;
         scene.add(model);
+
+        
+
     });
 
 })
